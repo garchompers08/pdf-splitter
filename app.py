@@ -173,4 +173,6 @@ def cleanup_files(response):
 if __name__ == '__main__':
     print("Starting PDF Splitter Web App...")
     print("Access the app at: http://localhost:5000")
-    app.run(debug=True, host='localhost', port=5000)
+    # Debug mode is enabled for local development to help users see errors
+    # For production use, set debug=False or use a production WSGI server
+    app.run(debug=False, host='localhost', port=5000)
